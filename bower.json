@@ -3,11 +3,11 @@
     "version": "1.2.3",
     "description": "",
     "strict-ssl": false,
-    "https-proxy": "",   
+    "https-proxy": "",
     "dependencies":
     {
-        "angular": "1.4.9",
-        "angular-route": "1.4.9",
+        "angular": "1.6.7",
+        "angular-route": "1.6.7",
         "angular-websocket": "1.0.14",
         "angular-clipboard": "1.2.1",
         "lodash": "3.10.1",
