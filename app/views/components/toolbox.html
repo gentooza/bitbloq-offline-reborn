@@ -143,7 +143,9 @@
       <ul class="content__list">
         <li class="content__list__item" ng-repeat="board in tree.boards track by board.id">
           <div class="board-name name title"><span>{{board.name | translate}}</span></div>
-          <img class="board-image" draggable dragid="{{board.id}}" dragtype="boards" ng-src="images/boards/{{board.id}}.png">
+          <div class="draggable-hw-component" draggable="true" dragid="{{board.id}}" dragtype="boards">
+            <img class="board-image" draggable="false" ng-src="images/boards/{{board.id}}.png">
+          </div>
         </li>
       </ul>
     </div>
@@ -151,7 +153,9 @@
       <ul class="content__list">
         <li class="content__list__item" ng-repeat="component in tree.componentSortered track by $index">
           <div class="board-name name title"><span>{{component.id | translate}}</span></div>
-          <img class="component-image" dragcategory="{{component.category}}" draggable dragid="{{component.id}}" dragtype="components" ng-src="images/components/{{component.id}}.svg" ng-style="{width:component.width + 'px'}">
+          <div class="draggable-hw-component" draggable="true" dragcategory="{{component.category}}" dragid="{{component.id}}" dragtype="components">
+            <img class="component-image"  draggable="false"  ng-src="images/components/{{component.id}}.svg" ng-style="{width:component.width + 'px'}">
+          </div>
         </li>
       </ul>
     </div>
@@ -159,7 +163,9 @@
       <ul class="content__list">
         <li class="content__list__item" ng-repeat="robot in tree.robots track by $index">
           <div class="board-name   name title"><span>{{robot.name | translate}}</span></div>
-          <img class="robot-image" draggable dragid="{{robot.id}}" dragtype="robots" ng-src="images/robots/{{robot.id}}.svg" ng-style="{width:robot.width + 'px'}">
+          <div class="draggable-hw-component" draggable="true" dragid="{{robot.id}}" dragtype="robots">
+            <img draggable="false" class="robot-image" ng-src="images/robots/{{robot.id}}.svg" ng-style="{width:robot.width + 'px'}">
+          </div>
         </li>
       </ul>
     </div>

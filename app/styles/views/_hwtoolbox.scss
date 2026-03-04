@@ -37,18 +37,28 @@
     }
   }
 
+  .draggable-hw-component {
+    cursor: -webkit-grab;
+  }
+
   .board-image {
     width: 175px;
-    cursor: -webkit-grab;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
   }
 
   .component-image {
     max-width: 60%;
-    cursor: -webkit-grab;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
   }
 
   .robot-image {
     width: 75px;
-    cursor: -webkit-grab;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
   }
 }

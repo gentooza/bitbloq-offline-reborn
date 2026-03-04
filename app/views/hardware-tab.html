@@ -23,7 +23,7 @@
               <p class="component__message">{{'make-hardware-component-container' | translate}}</p>
           </div>
 
-          <div id="boardSchema" class="board" ng-class="{'board--present':project.hardware.board, 'board--selected':boardSelected, 'opaque':!project.hardware.robot}">
+          <div id="boardSchema" droppable drop="drop" class="board" ng-class="{'board--present':project.hardware.board, 'board--selected':boardSelected, 'opaque':!project.hardware.robot}">
               <p class="board__message">{{'make-hardware-board-container' | translate}}</p>
           </div>
 
