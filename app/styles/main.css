@@ -1778,17 +1778,26 @@ code {
 .toolbox-hw .toolbox__content.active {
   width: 200px; }
 
+.toolbox-hw .draggable-hw-component {
+  cursor: -webkit-grab; }
+
 .toolbox-hw .board-image {
   width: 175px;
-  cursor: -webkit-grab; }
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none; }
 
 .toolbox-hw .component-image {
   max-width: 60%;
-  cursor: -webkit-grab; }
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none; }
 
 .toolbox-hw .robot-image {
   width: 75px;
-  cursor: -webkit-grab; }
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none; }
 
 .plotter {
   min-width: 500px;
